@@ -1,0 +1,49 @@
+*,
+::after,
+::before {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+@mixin xl-large {
+    @media (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (max-width: 1000px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin sm-mobile {
+    @media (max-width: 350px) {
+        @content;
+    }
+}
